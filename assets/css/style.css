@@ -194,10 +194,10 @@ h2 .purple {
 }
 
 .products__item-top {
+    position: relative;
     background: url("/assets/images/product/product.png") no-repeat center, #E9E9E9;
     padding: 10px;
     margin-bottom: 23px;
-    position: relative;
     border-radius: 10px;
 }
 
@@ -263,9 +263,6 @@ h2 .purple {
 
 .product-btn {
     width: 185px;
-    position: absolute;
-    display: inline-block !important;
-    margin-top: 5%;
     opacity: 0;
 }
 
@@ -516,6 +513,10 @@ a.header-buyer {
 
     .mobile-form {
         margin-bottom: 50px;
+    }
+
+    .mobile-form input {
+        width: 284px;
     }
 
     .mobile-buttons a {
