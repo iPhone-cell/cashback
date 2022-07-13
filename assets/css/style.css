@@ -264,6 +264,11 @@ h2 .purple {
 .product-btn {
     width: 185px;
     opacity: 0;
+    display: inline-block !important;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    margin-left: -6px;
 }
 
 .products__item-top:hover .product-btn {
@@ -616,6 +621,7 @@ body {
     color: #1C1C1C;
     font-family: Roboto, sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -680,4 +686,38 @@ h2 {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.85);
+}
+
+.ellipse {
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.3) 30%, rgba(188, 38, 240, 0.3) 30%, rgba(243, 20, 20, 0.3) 30%, rgba(166, 73, 209, 0.3) 30%, rgba(40, 85, 244, 0.3) 30%, rgba(239, 25, 179, 0.3) 30%);
+    -webkit-filter: blur(150px);
+    filter: blur(150px);
+    width: 303px;
+    height: 303px;
+    position: absolute;
+}
+
+.ellipse-1 {
+    left: -146px;
+    top: 101.79px;
+}
+
+.ellipse-2 {
+    left: 42px;
+    top: 369.33px;
+}
+
+.ellipse-3 {
+    left: 42px;
+    top: 369.33px;
+}
+
+.ellipse-4 {
+    left: 1641px;
+    top: 606.33px;
+}
+
+.ellipse-5 {
+    left: -130px;
+    top: 1109.33px;
 }

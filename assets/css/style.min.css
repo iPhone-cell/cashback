@@ -26,7 +26,7 @@
   position: relative;
 }
 .header__search {
-  background: url("/assets/images/header/search.svg") no-repeat 30px, #F6F6F6;
+  background: url("../images/header/search.svg") no-repeat 30px, #F6F6F6;
   border-radius: 100px;
   padding: 20px 0 20px 60px;
   border: 0;
@@ -170,7 +170,7 @@ h2 .purple {
 
 .products__item-top {
   position: relative;
-  background: url("/assets/images/product/product.png") no-repeat center, #E9E9E9;
+  background: url("../images/product/product.png") no-repeat center, #E9E9E9;
   padding: 10px;
   margin-bottom: 23px;
   border-radius: 10px;
