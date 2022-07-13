@@ -1,1 +1,1 @@
-console.log("file 1"),console.log("file 2");
+!function(){const e=document.querySelector(".burger"),t=document.querySelector(".nav-menu"),c=document.querySelector(".burger-menu");e.addEventListener("click",(()=>{e.classList.toggle("active"),t.classList.toggle("active"),c.classList.toggle("overlay")})),document.querySelectorAll(".nav-link").forEach((l=>l.addEventListener("click",(()=>{e.classList.remove("active"),t.classList.remove("active"),c.classList.remove("overlay")}))))}(),console.log("file 2");
