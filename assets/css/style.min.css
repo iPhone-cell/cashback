@@ -474,6 +474,10 @@ a.header-buyer {
     font-size: 25px !important;
     width: 280px;
   }
+  .intro > .container {
+    width: 100%;
+    padding: 0;
+  }
   .intro__btn {
     width: 300px;
     margin-left: auto;
