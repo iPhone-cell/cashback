@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Document</title></head>
+<body>
+
+    <header class="header" id="header">
+    	<div class="container">
+    		<div class="header__main">
+    			<a href="#" class="header__logo">
+    				Логотип
+    			</a>
+    			<a href="#" class="btn-purple btn header__catalog">
+    				<span class="header__burger"></span>
+    				Каталог
+    			</a>
+    			<form action="#" class="header__form">
+    				<input type="search" class="header__search" placeholder='Хочу найти...'>
+    			</form>
+    			<a href="#" class="header__search-small">
+    				<img src="assets/images/responsive/search.svg" alt="Искать">
+    			</a>
+    			<a href="#" class="burger">
+    				<span class="burger-black"></span>
+    				<span class="burger-black"></span>
+    				<span class="burger-black"></span>
+    			</a>
+    			<div class="header__buttons">
+    				<a href="#ex1" rel="modal:open" class="btn-orange btn header__seller">
+    					Я продавец
+    				</a>
+    				<a href="#ex1" rel="modal:open" class="btn-purple btn header-buyer">
+    					Я покупатель
+    				</a>
+    			</div>
+    		</div>
+    		<!-- Burger menu -->
+    		<div class="burger-menu">
+    			<div class="nav-menu">
+    				<a href="#" class="btn-purple btn mobile-catalog">
+    					<span class="header__burger"></span>
+    					Каталог
+    				</a>
+    				<form action="#" class="mobile-form">
+    					<input type="search" class="header__search" placeholder='Хочу найти...'>
+    				</form>
+    				<div class="mobile-buttons">
+    					<a href="#ex1" rel="modal:open" class="btn-orange btn header__seller">
+    						Я продавец
+    					</a>
+    					<a href="#ex1" rel="modal:open" class="btn-purple btn header-buyer">
+    						Я покупатель
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    		<!-- Modal Window -->
+    		<div id="ex1" class="modal">
+    			<div class="modal-wrapper">
+    				<div class="modal__title">Для получения кэшбэка <span class="pink">нужно:</span></div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Заказать товар</span><a href="#" class="pink">как найти товар</a>
+    				</div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Выкупить товар</span>
+    				</div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Оставить положительный отзыв с фото</span>
+    				</div>
+    				<a href="#" class="btn btn-purple modal__item-btn">Приступить к выполнению</a>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <main>
+    	<div class="container">
+    		<nav class="cards-nav">
+    			<ul>
+    				<li class="active">
+    					<a href="#">Главная</a>
+    				</li>
+    				<li>
+    					<a href="#">Мужчинам</a>
+    				</li>
+    				<li>
+    					<a href="#">Джинсы</a>
+    				</li>
+    				<li>
+    					<a href="#">Wrangler</a>
+    				</li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<div class="cards-intro">
+    		<div class="container">
+    			<div class="cards-intro__main">
+    				<div class="cards__intro-wrapper tabs-block-wrapper" id="tabs">
+    					<ul class="cards__slider">
+    						<li class="slide">
+    							<a href="#tabs-1">
+    								<img class="tab-btn" src="assets/images/cards-slider/img-big.jpg" alt="">
+    							</a>
+    						</li>
+    						<li class="slide">
+    							<a href="#tabs-2">
+    								<img class="tab-btn" src="assets/images/cards-slider/img-small.jpg" alt="">
+    							</a>
+    						</li>
+    						<li class="slide">
+    							<a href="#tabs-3">
+    								<img class="tab-btn" src="assets/images/cards-slider/img-big.jpg" alt="">
+    							</a>
+    						</li>
+    						<li class="slide">
+    							<a href="#tabs-4">
+    								<img class="tab-btn" src="assets/images/cards-slider/img-small.jpg" alt="">
+    							</a>
+    						</li>
+    					</ul>
+    					<div class="content" id="tabs-1">
+    						<img src="assets/images/cards-slider/img-big.jpg" alt="">
+    					</div>
+    					<div class="content" id="tabs-2">
+    						<img src="assets/images/cards-slider/img-small.jpg" alt="">
+    					</div>
+    					<div class="content" id="tabs-3">
+    						<img src="assets/images/cards-slider/img-big.jpg" alt="">
+    					</div>
+    					<div class="content" id="tabs-4">
+    						<img src="assets/images/cards-slider/img-small.jpg" alt="">
+    					</div>
+    				</div>
+    				<div id="tabid"></div>
+    				<div class="intro__info">
+    					<h1 class="card__title">
+    						Wrangler / Джинсы Texas
+    					</h1>
+    					<div class="card__rating">
+    						<div class="rating__stars" data-total-value="4">
+    							<div class="rating__stars-item" data-item-value="5">★</div>
+    							<div class="rating__stars-item" data-item-value="4">★</div>
+    							<div class="rating__stars-item" data-item-value="3">★</div>
+    							<div class="rating__stars-item" data-item-value="2">★</div>
+    							<div class="rating__stars-item" data-item-value="1">★</div>
+    						</div>
+    						<a href="#">30 отзывов</a>
+    					</div>
+    					<div class="card__price-wrapper">
+    						<div class="card__price">
+    							5 988 ₽
+    						</div>
+    						<span class="card__price-old">
+    							7000 ₽
+    						</span>
+    					</div>
+    					<div class="card__cashback">
+    						Кэшбэк: 60₽
+    					</div>
+    					<a href="#" class="btn btn-purple card__btn">
+    						Узнать условия для получения кэшбэка
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<section id="description" class="cards-description">
+    		<div class="container">
+    			<h2>Описание</h2>
+    			<p>Капсулы БАД Li Dа - продукт для похудения, жиросжигания, притупляют чувство голода. Ключевыми действиями
+    				средства для похудения lida являются не только подавление и контроль аппетита, жиросжигание, но и
+    				разложение Капсулы БАД Li Dа - продукт для похудения, жиросжигания, притупляют чувство голода. Ключевыми
+    				действиями средства для похудения lida являются не только подавление и контроль аппетита, жиросжигание,
+    				но и разложение Капсулы БАД Li Dа - продукт для похудения, жиросжигания, притупляют чувство голода.
+    				Ключевыми действиями средства для похудения lida являются не только подавление и контроль аппетита,
+    				жиросжигание, но и разложениеКапсулы БАД Li Dа - продукт для похудения, жиросжигания, притупляют чувство
+    				голода. Ключевыми действиями средства для похудения lida являются не только подавление и контроль
+    				аппетита, жиросжигание, но и разложение</p>
+    			<a href="#" class="btn btn-purple description-btn">Узнать больше о товаре</a>
+    		</div>
+    	</section>
+    	<section id="reviews" class="cards-reviews">
+    		<div class="container">
+    			<div class="reviews__top">
+    				<div class="reviews__top-left">
+    					<h2>Отзывы <span class="purple">о товаре</span></h2>
+    					<a href="#" class="btn btn-purple reviews__top-btn">Добавить отзыв</a>
+    				</div>
+    				<div class="rating">
+    					<div class="rating__main">
+    						<div class="rating__left">
+    							<div class="rating__number">4.1</div>
+    							<div class="rating__text">На основании 20 отзывов</div>
+    							<div class="rating__stars" data-total-value="4">
+    								<div class="rating__stars-item" data-item-value="5">★</div>
+    								<div class="rating__stars-item" data-item-value="4">★</div>
+    								<div class="rating__stars-item" data-item-value="3">★</div>
+    								<div class="rating__stars-item" data-item-value="2">★</div>
+    								<div class="rating__stars-item" data-item-value="1">★</div>
+    							</div>
+    						</div>
+    						<div class="rating__right">
+    							<div class="rating__right-item">
+    								<span class="rating__right-number">5</span>
+    								<div class="rating__right-scale">
+    									<div class="rating__right-scale-1"></div>
+    								</div>
+    								<span class="rating__right-percent">70%</span>
+    							</div>
+    							<div class="rating__right-item">
+    								<span class="rating__right-number">4</span>
+    								<div class="rating__right-scale">
+    									<div class="rating__right-scale-2"></div>
+    								</div>
+    								<span class="rating__right-percent">20%</span>
+    							</div>
+    							<div class="rating__right-item">
+    								<span class="rating__right-number">3</span>
+    								<div class="rating__right-scale">
+    									<div class="rating__right-scale-3"></div>
+    								</div>
+    								<span class="rating__right-percent">10%</span>
+    							</div>
+    							<div class="rating__right-item">
+    								<span class="rating__right-number">2</span>
+    								<div class="rating__right-scale">
+    									<div class="rating__right-scale-4"></div>
+    								</div>
+    								<span class="rating__right-percent">10%</span>
+    							</div>
+    							<div class="rating__right-item">
+    								<span class="rating__right-number">1</span>
+    								<div class="rating__right-scale">
+    									<div class="rating__right-scale-5"></div>
+    								</div>
+    								<span class="rating__right-percent">22%</span>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="reviews__main">
+    				<div class="reviews__item">
+    					<div class="reviews__item-top">
+    						<div class="reviews__item-top-author">
+    							<img src="assets/images/cards-reviews/author.svg" alt="">
+    							<span class="reviews__name">Екатерина</span>
+    							<span class="reviews__date">Сегодня, 15:00</span>
+    						</div>
+    						<div class="reviews__item-top-rating">
+    							<div class="rating__stars" data-total-value="5">
+    								<div class="rating__stars-item" data-item-value="5">★</div>
+    								<div class="rating__stars-item" data-item-value="4">★</div>
+    								<div class="rating__stars-item" data-item-value="3">★</div>
+    								<div class="rating__stars-item" data-item-value="2">★</div>
+    								<div class="rating__stars-item" data-item-value="1">★</div>
+    							</div>
+    						</div>
+    					</div>
+    					<p class="reviews__item-top-text">
+    						Покупаю 2 раз.1 раз похудела дней за 10 сразу на 5 кг без физ нагрузок.кушать не
+    						хотелось.результат был бесподобен.потом месяц перерыв сделала и мои кг вернулись ,хотя я не
+    						ем как раньше.удивительно конечно))).сегодня начала пить капсулы опять посмотрю как будет в
+    						этот раз.ладони потеют,организм требует много воды.значит процесс есть.
+    					</p>
+    					<div class="reviews__item-images">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    					</div>
+    				</div>
+    				<div class="reviews__item">
+    					<div class="reviews__item-top">
+    						<div class="reviews__item-top-author">
+    							<img src="assets/images/cards-reviews/author.svg" alt="">
+    							<span class="reviews__name">Екатерина</span>
+    							<span class="reviews__date">Сегодня, 15:00</span>
+    						</div>
+    						<div class="reviews__item-top-rating">
+    							<div class="rating__stars" data-total-value="5">
+    								<div class="rating__stars-item" data-item-value="5">★</div>
+    								<div class="rating__stars-item" data-item-value="4">★</div>
+    								<div class="rating__stars-item" data-item-value="3">★</div>
+    								<div class="rating__stars-item" data-item-value="2">★</div>
+    								<div class="rating__stars-item" data-item-value="1">★</div>
+    							</div>
+    						</div>
+    					</div>
+    					<p class="reviews__item-top-text">
+    						Покупаю 2 раз.1 раз похудела дней за 10 сразу на 5 кг без физ нагрузок.кушать не
+    						хотелось.результат был бесподобен.потом месяц перерыв сделала и мои кг вернулись ,хотя я не
+    						ем как раньше.удивительно конечно))).сегодня начала пить капсулы опять посмотрю как будет в
+    						этот раз.ладони потеют,организм требует много воды.значит процесс есть.
+    					</p>
+    					<div class="reviews__item-images">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    						<img src="assets/images/cards-reviews/review-img.jpg" alt="">
+    					</div>
+    				</div>
+    				<a href="#" class="btn btn-purple reviews__item-btn">Показать еще</a>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="reviews-products">
+    		<div class="container">
+    			<h2 class="reviews-products__title">Рекомендуем товары <span class="purple">с кэшбэком</span></h2>
+    			<div class="products">
+    				<a href="#" class="products__item">
+    					<div class="products__item-top">
+    						<div class="products__item-price purple-bg">
+    							5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+    						</div>
+    						<div class="btn btn-purple product-btn">Узнать условия</div>
+    						<div class="products__item-percent purple-bg">
+    							-33%
+    						</div>
+    					</div>
+    					<div class="products__item__bottom">
+    						<div class="products__item__cashback">
+    							<div class="product__cashback">
+    								<span class="purple">Кэшбэк:</span> <span
+    									class="font-weight-bold font-size-22">149р.</span>
+    							</div>
+    							<div class="product__price-1">
+    								<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+    							</div>
+    							<div class="product__price-2">
+    								<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+    							</div>
+    							<div class="product__title">
+    								Название товара в 1 строчку...
+    							</div>
+    						</div>
+    					</div>
+    
+    				</a>
+    				<a href="#" class="products__item">
+    					<div class="products__item-top">
+    						<div class="products__item-price purple-bg">
+    							5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+    						</div>
+    						<div class="btn btn-purple product-btn">Узнать условия</div>
+    						<div class="products__item-percent purple-bg">
+    							-33%
+    						</div>
+    					</div>
+    					<div class="products__item__bottom">
+    						<div class="products__item__cashback">
+    							<div class="product__cashback">
+    								<span class="purple">Кэшбэк:</span> <span
+    									class="font-weight-bold font-size-22">149р.</span>
+    							</div>
+    							<div class="product__price-1">
+    								<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+    							</div>
+    							<div class="product__price-2">
+    								<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+    							</div>
+    							<div class="product__title">
+    								Название товара в 1 строчку...
+    							</div>
+    						</div>
+    					</div>
+    
+    				</a>
+    				<a href="#" class="products__item">
+    					<div class="products__item-top">
+    						<div class="products__item-price purple-bg">
+    							5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+    						</div>
+    						<div class="btn btn-purple product-btn">Узнать условия</div>
+    						<div class="products__item-percent purple-bg">
+    							-33%
+    						</div>
+    					</div>
+    					<div class="products__item__bottom">
+    						<div class="products__item__cashback">
+    							<div class="product__cashback">
+    								<span class="purple">Кэшбэк:</span> <span
+    									class="font-weight-bold font-size-22">149р.</span>
+    							</div>
+    							<div class="product__price-1">
+    								<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+    							</div>
+    							<div class="product__price-2">
+    								<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+    							</div>
+    							<div class="product__title">
+    								Название товара в 1 строчку...
+    							</div>
+    						</div>
+    					</div>
+    
+    				</a>
+    				<a href="#" class="products__item">
+    					<div class="products__item-top">
+    						<div class="products__item-price purple-bg">
+    							5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+    						</div>
+    						<div class="btn btn-purple product-btn">Узнать условия</div>
+    						<div class="products__item-percent purple-bg">
+    							-33%
+    						</div>
+    					</div>
+    					<div class="products__item__bottom">
+    						<div class="products__item__cashback">
+    							<div class="product__cashback">
+    								<span class="purple">Кэшбэк:</span> <span
+    									class="font-weight-bold font-size-22">149р.</span>
+    							</div>
+    							<div class="product__price-1">
+    								<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+    							</div>
+    							<div class="product__price-2">
+    								<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+    							</div>
+    							<div class="product__title">
+    								Название товара в 1 строчку...
+    							</div>
+    						</div>
+    					</div>
+    
+    				</a>
+    				<a href="#" class="products__item">
+    					<div class="products__item-top">
+    						<div class="products__item-price purple-bg">
+    							5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+    						</div>
+    						<div class="btn btn-purple product-btn">Узнать условия</div>
+    						<div class="products__item-percent purple-bg">
+    							-33%
+    						</div>
+    					</div>
+    					<div class="products__item__bottom">
+    						<div class="products__item__cashback">
+    							<div class="product__cashback">
+    								<span class="purple">Кэшбэк:</span> <span
+    									class="font-weight-bold font-size-22">149р.</span>
+    							</div>
+    							<div class="product__price-1">
+    								<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+    							</div>
+    							<div class="product__price-2">
+    								<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+    							</div>
+    							<div class="product__title">
+    								Название товара в 1 строчку...
+    							</div>
+    						</div>
+    					</div>
+    
+    				</a>
+    			</div>
+    		</div>
+    	</section>
+    </main>
+
+    <footer class="footer" id="footer">
+    	<div class="container">
+    		<div class="footer__main">
+    			<div class="footer__top">
+    				<div class="footer__top-top">
+    					<a href="#" class="header__logo footer__logo">
+    						Логотип
+    					</a>
+    					<div class="footer__messengers">
+    						<a href="#">
+    							<img src="assets/images/footer/telegram.svg" alt="Telegram">
+    						</a>
+    						<a href="#">
+    							<img src="assets/images/footer/phone.svg" alt="WhatsApp">
+    						</a>
+    					</div>
+    				</div>
+    				<div class="footer__top-bottom">
+    					<span class="footer__copy">©2022. Все права защищены.</span>
+    					<nav>
+    						<a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+    						<a href="#" class="footer__public-offer">Публичная оферта</a>
+    						<a href="#" class="footer__support">Поддержка</a>
+    					</nav>
+    				</div>
+    				<a href="#" class="footer__up">
+    					<img src="assets/images/footer/arrow-up.svg" alt=" Вверх">
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer__line"></div>
+    	<div class="container">
+    		<div class="footer__bottom">
+    			<img src="assets/images/footer/development.png" alt="Разработка сайта Osqura">
+    		</div>
+    	</div>
+    	<div class="ellipse ellipse-1"></div>
+    	<div class="ellipse ellipse-2"></div>
+    	<div class="ellipse ellipse-3"></div>
+    	<div class="ellipse ellipse-4"></div>
+    	<div class="ellipse ellipse-5"></div>
+    </footer>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

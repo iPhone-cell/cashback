@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -12,8 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Document</title>
-</head>
+    <title>Document</title></head>
 <body>
 
     <header class="header" id="header">
@@ -38,14 +39,15 @@
     				<span class="burger-black"></span>
     			</a>
     			<div class="header__buttons">
-    				<a href="#" class="btn-orange btn header__seller">
+    				<a href="#ex1" rel="modal:open" class="btn-orange btn header__seller">
     					Я продавец
     				</a>
-    				<a href="#" class="btn-purple btn header-buyer">
+    				<a href="#ex1" rel="modal:open" class="btn-purple btn header-buyer">
     					Я покупатель
     				</a>
     			</div>
     		</div>
+    		<!-- Burger menu -->
     		<div class="burger-menu">
     			<div class="nav-menu">
     				<a href="#" class="btn-purple btn mobile-catalog">
@@ -56,13 +58,32 @@
     					<input type="search" class="header__search" placeholder='Хочу найти...'>
     				</form>
     				<div class="mobile-buttons">
-    					<a href="#" class="btn-orange btn header__seller">
+    					<a href="#ex1" rel="modal:open" class="btn-orange btn header__seller">
     						Я продавец
     					</a>
-    					<a href="#" class="btn-purple btn header-buyer">
+    					<a href="#ex1" rel="modal:open" class="btn-purple btn header-buyer">
     						Я покупатель
     					</a>
     				</div>
+    			</div>
+    		</div>
+    		<!-- Modal Window -->
+    		<div id="ex1" class="modal">
+    			<div class="modal-wrapper">
+    				<div class="modal__title">Для получения кэшбэка <span class="pink">нужно:</span></div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Заказать товар</span><a href="#" class="pink">как найти товар</a>
+    				</div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Выкупить товар</span>
+    				</div>
+    				<div class="modal__item">
+    					<img src="assets/images/modal-window/check.svg" alt="">
+    					<span>Оставить положительный отзыв с фото</span>
+    				</div>
+    				<a href="#" class="btn btn-purple modal__item-btn">Приступить к выполнению</a>
     			</div>
     		</div>
     	</div>
@@ -732,6 +753,14 @@
     	<div class="ellipse ellipse-4"></div>
     	<div class="ellipse ellipse-5"></div>
     </footer>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
