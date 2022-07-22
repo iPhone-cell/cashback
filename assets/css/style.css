@@ -991,6 +991,33 @@ a.header-buyer {
     }
 }
 
+@media (max-width: 575px) {
+    .login-wrapper h2 {
+        max-width: 322px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-form .select select {
+        width: 70px !important;
+    }
+
+    .login-form .form-phone input {
+        width: 160px !important;
+    }
+
+    .login-form label.form-label-checkbox {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .login-form label.form-label-checkbox {
+        width: 250px !important;
+    }
+}
+
 .cards-nav {
     padding: 40px 0 51px 0;
 }
@@ -1666,6 +1693,16 @@ a.purpose__logos-yandex:hover {
     color: #D417AB;
 }
 
+.login-form {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.login-form .form-phone {
+    max-width: 380px;
+    width: 100%;
+}
+
 .login-form label.form-label-tel {
     display: block;
     margin-bottom: 10px;
@@ -1702,6 +1739,15 @@ a.purpose__logos-yandex:hover {
     appearance: none;
     font-family: inherit;
     font-size: 1rem;
+    width: 106px;
+}
+
+.login-form .form-phone input {
+    display: inline-block;
+    width: 268px;
+    height: 50.5px;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 
 .login-form button {
@@ -1718,17 +1764,62 @@ a.purpose__logos-yandex:hover {
     margin: 19px auto 32px auto;
 }
 
+.login-form button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 .login-form .checkbox {
+    position: relative;
+}
+
+.login-form .checkbox .checkbox__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    position: absolute;
+    padding: 0;
+}
+
+.login-form .checkbox .checkbox__input:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.login-form .checkbox .checkbox__input:after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url("../images/login/check.svg") no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.login-form .checkbox .checkbox__input:checked:after {
+    opacity: 1;
 }
 
 .login-form label.form-label-checkbox {
+    padding-left: 40px;
     font-size: 14px;
     opacity: 0.5;
     display: inline-block;
-    width: 302px;
+    width: 340px;
+    cursor: pointer;
 }
 
 @font-face {
