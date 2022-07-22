@@ -914,9 +914,80 @@ a.header-buyer {
     }
 }
 
+@media (max-width: 991px) {
+    .purpose__logos {
+        -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    }
+
+    .purpose__logos a {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .question-advantages__item:last-child {
+        width: 630px;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 340px !important;
+    }
+
+    .question-advantages__item:last-child span {
+        display: block;
+        width: 100%;
+        left: 70px;
+    }
+
+    .question-advantages__item:last-child p {
+        max-width: 300px;
+        margin-right: auto;
+    }
+
+    .question-advantages__item:last-child img {
+        width: 400px;
+        height: 400px;
+        margin-top: -100px;
+    }
+
+    li {
+        word-wrap: break-word;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .question-advantages__item:last-child {
+        width: 100%;
+    }
+
+    .question-advantages__item:last-child img {
+        width: 300px;
+        height: 300px;
+        margin-top: -55px;
+    }
+
+    .question-advantages__item {
+        padding-right: 15px !important;
+    }
+}
+
 @media (max-width: 375px) {
     .question-advantages__item {
         width: 100%;
+    }
+
+    .question-register {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .question2-register {
+        width: 90% !important;
     }
 }
 
@@ -1445,7 +1516,7 @@ a.pagination__next-page:hover {
     color: #AF2EFF;
 }
 
-.question__logos {
+.purpose__logos {
     margin: 30px 0 0 0;
     display: -ms-flexbox;
     display: flex;
@@ -1456,18 +1527,33 @@ a.pagination__next-page:hover {
     flex-wrap: wrap;
 }
 
-.question__logos a {
+.purpose__logos a {
     display: inline-block;
     width: 305px;
+    height: 200px;
     background: #F5F2F5;
     border-radius: 10px;
     text-align: center;
-    padding: 20px 0;
-    opacity: 0.5;
 }
 
-.question__logos a:hover {
-    opacity: 1;
+a.purpose__logos-wildberries {
+    background: url("../images/questions-logos/1-1.svg") no-repeat center, #F5F2F5;
+}
+
+a.purpose__logos-ozon {
+    background: url("../images/questions-logos/2.svg") no-repeat center, #F5F2F5;
+}
+
+a.purpose__logos-ozon:hover {
+    background-image: url("../images/questions-logos/2-2.svg");
+}
+
+a.purpose__logos-yandex {
+    background: url("../images/questions-logos/3.svg") no-repeat center, #F5F2F5;
+}
+
+a.purpose__logos-yandex:hover {
+    background-image: url("../images/questions-logos/3-3.svg");
 }
 
 .question-advantages {
@@ -1545,6 +1631,104 @@ a.pagination__next-page:hover {
 
 .question-register:hover {
     opacity: 0.9;
+}
+
+.question2-register {
+    display: block;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.question2-register:hover {
+    opacity: 0.9;
+}
+
+.login-wrapper {
+    max-width: 663px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login-wrapper h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login-wrapper h2 span {
+    color: #D417AB;
+}
+
+.login-form label.form-label-tel {
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.login-form input, .login-form select {
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+.login-form .select {
+    position: relative;
+    display: inline;
+}
+
+.login-form .select:after {
+    content: "";
+    display: inline-block;
+    border: solid #D9D9D9;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    right: 15px;
+    top: 20%;
+}
+
+.login-form .select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.login-form button {
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 0;
+    margin: 19px auto 32px auto;
+}
+
+.login-form .checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.login-form label.form-label-checkbox {
+    font-size: 14px;
+    opacity: 0.5;
+    display: inline-block;
+    width: 302px;
 }
 
 @font-face {

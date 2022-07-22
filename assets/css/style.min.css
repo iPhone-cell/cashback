@@ -808,6 +808,33 @@ a.header-buyer {
     font-size: 13px !important;
   }
 }
+@media (max-width: 1280px) {
+  .question2-register {
+    width: 90% !important;
+  }
+}
+@media (max-width: 575px) {
+  .login-wrapper h2 {
+    max-width: 322px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .login-form .select select {
+    width: 70px !important;
+  }
+  .login-form .form-phone input {
+    width: 160px !important;
+  }
+  .login-form label.form-label-checkbox {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 375px) {
+  .login-form label.form-label-checkbox {
+    width: 250px !important;
+  }
+}
 .cards-nav {
   padding: 40px 0 51px 0;
 }
@@ -1367,6 +1394,147 @@ a.purpose__logos-yandex:hover {
 }
 .question-register:hover {
   opacity: 0.9;
+}
+
+.question2-register {
+  display: block;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+  padding: 25px 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-radius: 100px;
+  text-align: center;
+}
+.question2-register:hover {
+  opacity: 0.9;
+}
+
+.login-wrapper {
+  max-width: 663px;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-wrapper h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.login-wrapper h2 span {
+  color: #D417AB;
+}
+
+.login-form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.login-form .form-phone {
+  max-width: 380px;
+  width: 100%;
+}
+.login-form label.form-label-tel {
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.login-form input, .login-form select {
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.login-form .select {
+  position: relative;
+  display: inline;
+}
+.login-form .select:after {
+  content: "";
+  display: inline-block;
+  border: solid #D9D9D9;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  right: 15px;
+  top: 20%;
+}
+.login-form .select select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 106px;
+}
+.login-form .form-phone input {
+  display: inline-block;
+  width: 268px;
+  height: 50.5px;
+  transform: translateY(-1px);
+}
+.login-form button {
+  display: block;
+  max-width: 380px;
+  width: 100%;
+  background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: none;
+  padding: 20px 0;
+  margin: 19px auto 32px auto;
+}
+.login-form button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.login-form .checkbox {
+  position: relative;
+}
+.login-form .checkbox .checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  padding: 0;
+}
+.login-form .checkbox .checkbox__input:before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.login-form .checkbox .checkbox__input:after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: url("../images/login/check.svg") no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.login-form .checkbox .checkbox__input:checked:after {
+  opacity: 1;
+}
+.login-form label.form-label-checkbox {
+  padding-left: 40px;
+  font-size: 14px;
+  opacity: 0.5;
+  display: inline-block;
+  width: 340px;
+  cursor: pointer;
 }
 
 @font-face {
