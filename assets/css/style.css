@@ -378,7 +378,7 @@ h2 .purple {
 
 .catalog-products .products__item {
     width: 305px;
-    margin-right: 15px;
+    margin: 0 15px 30px 0;
 }
 
 .catalog-products .product-btn {
@@ -461,6 +461,7 @@ h2 .purple {
 @media (max-width: 1199px) {
     .container {
         width: 940px;
+        width: 100%;
     }
 
     .header__search-small {
@@ -519,7 +520,7 @@ a.header-buyer {
 
 @media (max-width: 991px) {
     .container {
-        width: 720px;
+        max-width: 940px;
     }
 
     a.header__catalog,
@@ -632,7 +633,7 @@ a.header-buyer {
 
 @media (max-width: 768px) {
     .container {
-        width: 540px;
+        max-width: 720px;
     }
 
     .footer .footer__up img {
@@ -837,12 +838,85 @@ a.header-buyer {
     .catalog-products {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        overflow-x: hidden;
     }
 
     .catalog-products .products__item {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
         width: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-products .products__item {
+        width: 250px;
+    }
+
+    .catalog-container {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .sorting__wrapper {
+        display: block !important;
+    }
+
+    .sorting__wrapper div {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .sorting__wrapper .sorting-btn {
+        margin-right: 15px;
+    }
+
+    .pagination a {
+        padding: 10px 10px !important;
+    }
+
+    .catalog-title .catalog-title__wrapper h1 {
+        margin-right: 6px !important;
+    }
+
+    .catalog-title__wrapper div {
+        width: 120px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog-title__wrapper h1 {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .catalog-title__wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .sorting-btn.active {
+        width: 150px !important;
+    }
+
+    .sorting__wrapper .sorting-btn {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .question-advantages {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .question-advantages__item {
+        width: 100%;
     }
 }
 
@@ -1285,6 +1359,8 @@ a.description-btn {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .pagination a.active {
@@ -1326,6 +1402,149 @@ a.pagination__next-page:hover {
 
 .pagination__next-page img {
     margin-left: 10px;
+}
+
+.question {
+    margin: 90px 0 120px;
+    font-size: 18px;
+}
+
+.question__wrapper h2 {
+    margin: 5px 0 30px 0;
+}
+
+.question__wrapper div {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.question__wrapper ul {
+    max-width: 955px;
+}
+
+.question__wrapper li {
+    list-style-type: disc;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.question__wrapper li span {
+    font-weight: 600;
+    color: #AF2EFF;
+}
+
+.question__wrapper p {
+    margin-bottom: 30px;
+    max-width: 955px;
+}
+
+.question__wrapper p span {
+    font-weight: 600;
+    color: #AF2EFF;
+}
+
+.question__logos {
+    margin: 30px 0 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 955px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.question__logos a {
+    display: inline-block;
+    width: 305px;
+    background: #F5F2F5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0.5;
+}
+
+.question__logos a:hover {
+    opacity: 1;
+}
+
+.question-advantages {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1280px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.question-advantages__item {
+    max-width: 630px;
+    background: #F5F2F5;
+    border-radius: 10px;
+    padding: 50px 84px 43px 23px;
+    margin-bottom: 20px;
+    color: #000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.question-advantages__item span {
+    font-weight: 900;
+    font-size: 100px;
+    color: #EEE8EE;
+    position: absolute;
+    margin-top: -80px;
+}
+
+.question-advantages__item:hover {
+    box-shadow: 5px 10px 30px rgba(38, 10, 55, 0.15);
+}
+
+.question-advantages__item:last-child {
+    max-width: 1280px !important;
+    color: #fff;
+    background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+    height: 180px;
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+
+.question-advantages__item:last-child span {
+    font-weight: 900;
+    font-size: 100px;
+    color: #BA36FF;
+    margin-top: 0px;
+}
+
+.question-advantages__item p {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    z-index: 2;
+}
+
+.question-register {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: linear-gradient(93.73deg, #FF922E 3.36%, #D51717 100.79%);
+    border-radius: 100px;
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+    padding: 25px;
+}
+
+.question-register:hover {
+    opacity: 0.9;
 }
 
 @font-face {
