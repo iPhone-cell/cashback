@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+
+	<title>Document</title>
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__main">
+				<a href="#" class="header__logo">
+					Логотип
+				</a>
+				<a href="#" class="btn-purple btn header__catalog">
+					<span class="header__burger"></span>
+					Каталог
+				</a>
+				<form action="#" class="header__form header-form-big">
+					<input type="search" class="header__search" placeholder='Хочу найти...'>
+				</form>
+				<a href="#" class="header__search-small">
+					<img src="assets/images/responsive/search.svg" alt="Искать">
+				</a>
+				<a href="#" class="burger">
+					<span class="burger-black"></span>
+					<span class="burger-black"></span>
+					<span class="burger-black"></span>
+				</a>
+				<a href="#" class="profile-buyer">
+					<img src="assets/images/profiles/profile-buyer.svg" alt="">
+					<span>Сергей Трофимов <span class="bold">(5 500₽)</span></span>
+					<div class="arrow-down"></div>
+				</a>
+			</div>
+			<!-- Burger menu -->
+			<div class="burger-menu">
+				<div class="nav-menu">
+					<a href="#" class="btn-purple btn mobile-catalog">
+						<span class="header__burger"></span>
+						Каталог
+					</a>
+					<form action="#" class="mobile-form">
+						<input type="search" class="header__search" placeholder='Хочу найти...'>
+					</form>
+					<a href="#" class="mobile-profile-buyer">
+						<img src="assets/images/profiles/profile-buyer.svg" alt="">
+						<span>Сергей Трофимов <span class="bold">(5 500₽)</span></span>
+						<div class="arrow-down"></div>
+					</a>
+				</div>
+			</div>
+			<!-- Modal Window -->
+			<div id="ex1" class="modal">
+				<div class="modal-wrapper">
+					<div class="modal__title">Для получения кэшбэка <span class="pink">нужно:</span></div>
+					<div class="modal__item">
+						<img src="assets/images/modal-window/check.svg" alt="">
+						<span>Заказать товар</span><a href="#" class="pink">как найти товар</a>
+					</div>
+					<div class="modal__item">
+						<img src="assets/images/modal-window/check.svg" alt="">
+						<span>Выкупить товар</span>
+					</div>
+					<div class="modal__item">
+						<img src="assets/images/modal-window/check.svg" alt="">
+						<span>Оставить положительный отзыв с фото</span>
+					</div>
+					<a href="#" class="btn btn-purple modal__item-btn">Приступить к выполнению</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro" id="intro">
+			<div class="container">
+				<div class="intro__main">
+					<div class="intro__offer">
+						<h1>Сервис для получения кэшбэка от покупок на Wildberries, Озон <br>и Яндекс.Маркет</h1>
+						<a href="#" class="btn intro__btn">Как работает сервис</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="company" id="company">
+			<div class="company__main">
+				<span class="company__name">
+					Wildberries
+				</span>
+				<span class="company__name">
+					Озон
+				</span>
+				<span class="company__name">
+					Яндекс.Маркет
+				</span>
+				<span class="company__name">
+					Wildberries
+				</span>
+				<span class="company__name">
+					Озон
+				</span>
+				<span class="company__name">
+					Яндекс.Маркет
+				</span>
+			</div>
+		</div>
+		<section class="top" id="top">
+			<div class="top__main">
+				<div class="container">
+					<h2 class="top__title section-title">TOП товаров <span class="purple">с кэшбэком</span></h2>
+					<div class="products">
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+
+						</a>
+						<a href="#" class="products__item">
+							<div class="products__item-top">
+								<div class="products__item-price purple-bg">
+									5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+								</div>
+								<div class="btn btn-purple product-btn">Узнать условия</div>
+								<div class="products__item-percent purple-bg">
+									-33%
+								</div>
+							</div>
+							<div class="products__item__bottom">
+								<div class="products__item__cashback">
+									<div class="product__cashback">
+										<span class="purple">Кэшбэк:</span> <span
+											class="font-weight-bold font-size-22">149р.</span>
+									</div>
+									<div class="product__price-1">
+										<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+									</div>
+									<div class="product__price-2">
+										<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+									</div>
+									<div class="product__title">
+										Название товара в 1 строчку...
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cashback" id="cashback">
+			<div class="container">
+				<h2 class="top__title section-title">Товары <span class="purple">с кэшбэком</span></h2>
+				<div class="products">
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="products__item">
+						<div class="products__item-top">
+							<div class="products__item-price purple-bg">
+								5 988 ₽ <span class="products__item-old-price">7 200 ₽</span>
+							</div>
+							<div class="btn btn-purple product-btn">Узнать условия</div>
+							<div class="products__item-percent purple-bg">
+								-33%
+							</div>
+						</div>
+						<div class="products__item__bottom">
+							<div class="products__item__cashback">
+								<div class="product__cashback">
+									<span class="purple">Кэшбэк:</span> <span
+										class="font-weight-bold font-size-22">149р.</span>
+								</div>
+								<div class="product__price-1">
+									<span>Цена для вас:</span> <span class="font-weight-bold">5 988р.</span>
+								</div>
+								<div class="product__price-2">
+									<span>Цена на маркетплейсе:</span> <span class="font-weight-bold">7 000₽.</span>
+								</div>
+								<div class="product__title">
+									Название товара в 1 строчку...
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<a href="#" class="btn-more">Показать еще</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__main">
+				<div class="footer__top">
+					<div class="footer__top-top">
+						<a href="#" class="header__logo footer__logo">
+							Логотип
+						</a>
+						<div class="footer__messengers">
+							<a href="#">
+								<img src="assets/images/footer/telegram.svg" alt="Telegram">
+							</a>
+							<a href="#">
+								<img src="assets/images/footer/phone.svg" alt="WhatsApp">
+							</a>
+						</div>
+					</div>
+					<div class="footer__top-bottom">
+						<span class="footer__copy">©2022. Все права защищены.</span>
+						<nav>
+							<a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+							<a href="#" class="footer__public-offer">Публичная оферта</a>
+							<a href="#" class="footer__support">Поддержка</a>
+						</nav>
+					</div>
+					<a href="#" class="footer__up">
+						<img src="assets/images/footer/arrow-up.svg" alt=" Вверх">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__line"></div>
+		<div class="container">
+			<div class="footer__bottom">
+				<img src="assets/images/footer/development.png" alt="Разработка сайта Osqura">
+			</div>
+		</div>
+		<div class="ellipse ellipse-1"></div>
+		<div class="ellipse ellipse-2"></div>
+		<div class="ellipse ellipse-3"></div>
+		<div class="ellipse ellipse-4"></div>
+		<div class="ellipse ellipse-5"></div>
+	</footer>
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<!-- JQuery UI -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
