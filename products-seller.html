@@ -41,30 +41,86 @@
 					<span class="burger-black"></span>
 					<span class="burger-black"></span>
 				</a>
-				<a href="#" class="profile-buyer">
+				<a href="#" class="profile-buyer dropdown-link">
 					<img src="assets/images/profiles/profile-buyer.svg" alt="">
 					<span>Сергей Трофимов <span class="bold">(5 500₽)</span></span>
 					<div class="arrow-down"></div>
 				</a>
-			</div>
-			<!-- Burger menu -->
-			<div class="burger-menu">
-				<div class="nav-menu">
-					<a href="#" class="btn-purple btn mobile-catalog">
-						<span class="header__burger"></span>
-						Каталог
-					</a>
-					<form action="#" class="mobile-form">
-						<input type="search" class="header__search" placeholder='Хочу найти...'>
-					</form>
-					<a href="#" class="mobile-profile-buyer">
-						<img src="assets/images/profiles/profile-buyer.svg" alt="">
-						<span>Сергей Трофимов <span class="bold">(5 500₽)</span></span>
-						<div class="arrow-down"></div>
-					</a>
+				<div class="dropdown-item orange">
+					<div class="dropdown-item__wrapper">
+						<a href="#" class="dropdown-item__exit">
+							<img src="assets/images/x.svg" alt="">
+						</a>
+						<div class="dropdown-item__title">
+							Баланс: <span>(5 500₽)</span>
+						</div>
+						<a href="#" class="dropdown-item__btn">Пополнить баланс</a>
+						<a href="#" class="dropdown-item-item">
+							<img src="assets/images/box.svg" alt="">
+							<span>Товары с кэшбэком</span>
+						</a>
+						<a href="#" class="dropdown-item-item">
+							<img src="assets/images/exit.svg" alt="">
+							<span>Выход</span>
+						</a>
+					</div>
+				</div>
+				<!-- Burger menu -->
+				<div class="burger-menu">
+					<div class="nav-menu">
+						<a href="#" class="btn-purple btn mobile-catalog">
+							<span class="header__burger"></span>
+							Каталог
+						</a>
+						<form action="#" class="mobile-form">
+							<input type="search" class="header__search" placeholder='Хочу найти...'>
+						</form>
+						<a href="#" class="mobile-profile-seller mobile-profile">
+							<img src="assets/images/profiles/profile-seller.svg" alt="">
+							<span>Сергей Трофимов <span class="bold">(5 500₽)</span>
+								<div class="arrow-down"></div>
+						</a>
+						<div class="dropdown-item-mobile orange">
+							<div class="dropdown-item__wrapper">
+								<a href="#" class="dropdown-item__exit-mobile">
+									<img src="assets/images/x.svg" alt="">
+								</a>
+								<div class="dropdown-item__title">
+									Баланс: <span>(5 500₽)</span>
+								</div>
+								<a href="#" class="dropdown-item__btn">Пополнить баланс</a>
+								<a href="#" class="dropdown-item-item">
+									<img src="assets/images/box.svg" alt="">
+									<span>Товары с кэшбэком</span>
+								</a>
+								<a href="#" class="dropdown-item-item">
+									<img src="assets/images/exit.svg" alt="">
+									<span>Выход</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Window -->
+				<div id="ex1" class="modal">
+					<div class="modal-wrapper">
+						<div class="modal__title">Для получения кэшбэка <span class="pink">нужно:</span></div>
+						<div class="modal__item">
+							<img src="assets/images/modal-window/check.svg" alt="">
+							<span>Заказать товар</span><a href="#" class="pink">как найти товар</a>
+						</div>
+						<div class="modal__item">
+							<img src="assets/images/modal-window/check.svg" alt="">
+							<span>Выкупить товар</span>
+						</div>
+						<div class="modal__item">
+							<img src="assets/images/modal-window/check.svg" alt="">
+							<span>Оставить положительный отзыв с фото</span>
+						</div>
+						<a href="#" class="btn btn-purple modal__item-btn">Приступить к выполнению</a>
+					</div>
 				</div>
 			</div>
-		</div>
 	</header>
 
 	<main>

@@ -1818,10 +1818,6 @@ ul li {
 .account-item__user-exit:hover {
 	text-decoration-line: none;
 }
-.account-item__product {
-}
-.account-item__product-top {
-}
 .account-item__product-info {
 	margin-left: 90px;
 }
@@ -2152,7 +2148,7 @@ ul li {
 	top: 80px;
 	right: 0;
 }
-.dropdown-item.active {
+.dropdown-item.active, .dropdown-item-mobile.active {
 	display: block;
 }
 
@@ -2197,7 +2193,7 @@ ul li {
 .dropdown-item-item:last-child {
 	margin-bottom: 0;
 }
-.dropdown-item__exit {
+.dropdown-item__exit, .dropdown-item__exit-mobile {
 	position: absolute;
 	top: 30px;
 	right: 20px;
@@ -2205,20 +2201,22 @@ ul li {
 .dropdown-link.active {
 	z-index: 2;
 }
-
-.dropdown-link.active span, .dropdown-link.active span div {
-	color: #fff;
-	border-color: #fff;
+.dropdown-item-mobile {
+	display: none;
+	background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+	border-radius: 30px;
+	padding: 42px 20px 40px 20px;
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
 }
 
-.dropdown-item.active:after {
-	content: "";
-	display: block;
-	position: fixed; /* тоже могла бы быть абсолютной */
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	background: rgba(0, 0, 0, 0.8);
+@media (max-width: 425px) {
+	.dropdown-item__btn {
+		width: 200px;
+	}
+}
+
+.dropdown-item.orange, .dropdown-item-mobile.orange {
+	background: linear-gradient(93.73deg, #FF922E 3.36%, #D51717 100.79%);
 }
