@@ -3006,3 +3006,81 @@ ul li {
 		display: block;
 	}
 }
+
+.links-top {
+	margin-top: 130px;
+	text-align: right;
+}
+.links-top-link {
+	display: inline-block;
+	width: 250px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 18px;
+	color: #D417AB;
+	border: 2px solid #D417AB;
+	text-align: center;
+	transition: all 0.3s ease; 
+}
+.links-top-link:hover {
+	background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+	color: #fff;
+}
+.links-top-link.active {
+	background: linear-gradient(93.73deg, #AF2EFF 3.36%, #D517AB 100.79%);
+	color: #fff;
+}	
+
+.links-main {
+	margin: 0 auto;
+	margin-top: 30px;
+
+}
+.links-item {
+	display: flex;
+	justify-content: center;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(14, 16, 63, 0.11);
+	border-radius: 10px;
+	padding: 40px;
+	margin-bottom: 20px;
+	overflow-x: scroll;
+}
+
+.links-item table {
+	max-width: 1176px;
+	width: 100%;
+	text-align: left;
+}
+
+.links-item table th {
+	border-bottom: 1px solid #CFCBCF;
+	padding-bottom: 20px;
+}
+
+.links-item table td {
+	padding-top: 20px;
+}
+
+.links-top-link {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+	.links-item  {
+		justify-content: flex-start;
+		padding: 10px;
+	}
+	.links-item  table th,
+	.links-item  table td {
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 425px) {
+	.links-top {
+		text-align: center;	
+	}
+}
