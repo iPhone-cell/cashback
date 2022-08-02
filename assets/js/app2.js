@@ -24,3 +24,4 @@ dropdownExit.addEventListener("click", () => {
 dropdownExitMobile.addEventListener("click", () => {
 	dropdownItemMobile.classList.toggle("active");
 });
+

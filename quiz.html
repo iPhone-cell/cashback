@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Укажите название <span class="pink">товара</span></div>
+				<form action="#" class="quiz-form">
+					<input type="text" placeholder="Название товара">
+					<input type="text" placeholder="Бренд">
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">1</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					0%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Выберите условия для выплаты <span class="pink">кэшбэка в нужной
+						последовательности</span></div>
+				<form action="#" class="quiz-form">
+					<div class="quiz-form__checkbox">
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-1" class="checkbox__input"><label for="quiz-check-1"
+								class="quiz-checkbox__label">Заказать товар</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-2" class="checkbox__input"><label for="quiz-check-2"
+								class="quiz-checkbox__label">Выкупить товар</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-3" class="checkbox__input"><label for="quiz-check-3"
+								class="quiz-checkbox__label">Оставить положительный отзыв с фото</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-4" class="checkbox__input"><label for="quiz-check-4"
+								class="quiz-checkbox__label">Прислать скриншот отзыв</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-5" class="checkbox__input"><label for="quiz-check-5"
+								class="quiz-checkbox__label">Добавить магазин и товар в избранное</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-6" class="checkbox__input"><label for="quiz-check-6"
+								class="quiz-checkbox__label">Заказать товар</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-7" class="checkbox__input"><label for="quiz-check-7"
+								class="quiz-checkbox__label">Выкупить товар</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-8" class="checkbox__input"><label for="quiz-check-8"
+								class="quiz-checkbox__label">Оставить положительный отзыв с фото</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-9" class="checkbox__input"><label for="quiz-check-9"
+								class="quiz-checkbox__label">Прислать скриншот отзыв</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="quiz-check-10" class="checkbox__input"><label for="quiz-check-10"
+								class="quiz-checkbox__label">Добавить магазин и товар в избранное</label>
+						</div>
+					</div>
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">2</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					10%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Укажите цену на маркетплейсе <span class="pink">(₽)</span></div>
+				<form action="#" class="quiz-form">
+					<input type="text" placeholder="10 000 ₽" class="quiz-form-input-big">
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">3</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					30%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Укажите кэшбэк <span class="pink">(₽)</span></div>
+				<form action="#" class="quiz-form">
+					<input type="text" placeholder="140 ₽" class="quiz-form-input-big">
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">4</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					40%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Укажите итоговую цену <span class="pink">(₽)</span></div>
+				<form action="#" class="quiz-form">
+					<input type="text" placeholder="10 000 ₽" class="quiz-form-input-big">
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">5</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					55%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Опишите <span class="pink">товар</span></div>
+				<form action="#" class="quiz-form">
+					<textarea placeholder="Не более 1000 символов" class="quiz-form__textarea"></textarea>
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">6</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					65%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Как найти ваш товар, <br><span class="pink">опишите подробно</span></div>
+				<form action="#" class="quiz-form">
+					<textarea placeholder="Не более 1000 символов" class="quiz-form__textarea"></textarea>
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">7</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					75%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Добавьте <span class="pink">фото</span></div>
+				<form action="#" class="quiz-form">
+					<div class="quiz-form-images-wrapper">
+						<div class="modal-stages-form-images">
+							<div class="modal-stages-form-images-item"></div>
+							<div class="modal-stages-form-images-item"></div>
+							<div class="modal-stages-form-images-item"></div>
+							<div class="modal-stages-form-images-item"></div>
+							<div class="modal-stages-form-images-item"></div>
+							<div class="modal-stages-form-images-item"></div>
+						</div>
+						<div class="modal-stages-form-clip">
+							<img src="assets/images/modal-stages/clip.svg" alt="">
+							Прикрепить фото
+						</div>
+					</div>
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">8</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					85%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<div class="modal__title">Укажите количество товара участвующего в акции
+					на получение <span class="pink">кэшбэка</span></div>
+				<form action="#" class="quiz-form">
+					<input type="text" placeholder="1-999" class="quiz-form-input-big">
+					<button>Продолжить</button>
+				</form>
+				<div class="quiz-steps">
+					<span class="quiz-step-1">9</span> шаг из <span class="quiz-step-2">9</span>
+				</div>
+				<div class="quiz-indicator">
+					99%
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quiz-wrapper">
+		<div class="modal-quiz">
+			<div class="modal-wrapper">
+				<img src="assets/images/check-big.svg" alt="" class="quiz-result-image">
+				<div class="modal__title">Товар добавлен</div>
+				<a href="#" class="quiz-result-button">Смотреть</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/quiz.js"></script>
+</body>
+
+</html>
